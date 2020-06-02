@@ -1,0 +1,48 @@
+.header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  max-width: 90%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+.left i {
+  margin-right: 10px;
+}
+
+.center {
+  margin: auto;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right .btn {
+  width: 100px;
+  margin: auto;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 30px;
+  border: 1px solid #555555;
+  box-sizing: border-box;
+  background: white;
+}
