@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Notification from './components/Notification';
+import SeacrhBox from './components/searchBox';
 
 function App() {
   return (
     <div className='App'>
-      <Notification hasNotifi={false} />
+      <SeacrhBox />
     </div>
   );
 }
