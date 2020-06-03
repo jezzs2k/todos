@@ -34,5 +34,6 @@
 
 .searchBox .btn .icon {
   margin: 4px 0 0 6px;
-  fill: green;
+  max-width: 30px;
+  width: 100%;
 }

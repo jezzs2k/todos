@@ -9,7 +9,7 @@ const SearchBox = () => {
     text: '',
   });
 
-  const isFocus = () => {
+  const handleFocus = () => {
     setstate({ ...state, isFocus: true });
   };
 
@@ -17,7 +17,7 @@ const SearchBox = () => {
     setstate({ ...state, isFocus: false });
   };
 
-  const value = (e) => {
+  const handleInputFocus = (e) => {
     setstate({ ...state, text: e.target.value });
   };
 
@@ -31,23 +31,19 @@ const SearchBox = () => {
         placeholder='Type something to search ...'
         // className={`input-control ${state.text.length > 10 ? 'border' : ''}`}
         className={`input-control ${
-          state.text.slice(0, 3) !== '090' || state.text.length > 10
+          (state.text !== '' && state.text.slice(0, 3) !== '090') ||
+          state.text.length > 10
             ? 'border'
             : ''
         }`}
         value={state.text}
-        onChange={value}
-        onMouseEnter={isFocus}
+        onChange={handleInputFocus}
+        onMouseEnter={handleFocus}
         onMouseLeave={loseFocus}
       />
       {!state.isFocus && (
         <div className='btn'>
-          <img
-            src={searchIconfrom}
-            alt='search'
-            style={{ maxWidth: '30px', width: '100%' }}
-            className='icon'
-          />
+          <img src={searchIconfrom} className='icon' alt='search' />
         </div>
       )}
     </div>
