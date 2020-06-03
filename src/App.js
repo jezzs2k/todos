@@ -19,12 +19,12 @@ const App = () => {
   return (
     <div className='App'>
       {state.isClick && (
-        <Modal
-          closeModal={closeModal}
-          text={
-            ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in'
-          }
-        />
+        <Modal closeModal={closeModal}>
+          Hieu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          adminim veniam, quis nostrud exercitation ullamco laboris nisi
+          utaliquip ex ea commodo consequat. Duis aute irure dolor in
+        </Modal>
       )}
       <button onClick={handleClickModal}>Open Modal</button>
     </div>

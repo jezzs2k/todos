@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './modal.css';
 
 const Modal = (props) => {
-  const { closeModal, text } = props;
+  const { closeModal, children } = props;
   return (
     <div className='modal'>
       <div className='content'>
@@ -16,7 +16,7 @@ const Modal = (props) => {
             alt='close'
           />
         </div>
-        <p className='text'>{text}</p>
+        <p className='text'>{children}</p>
         <div className='action'>
           <button className='btn accept' onClick={closeModal}>
             Accept
